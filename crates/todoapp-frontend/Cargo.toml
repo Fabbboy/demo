@@ -1,0 +1,17 @@
+[package]
+name = "todoapp-frontend"
+version = "0.1.0"
+authors = ["Fabrice <fabrice@schaub-dev.xyz>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { workspace = true, features = ["router", "web"] }
+
+todoapp-transfer = { workspace = true }
+
+
+[features]
+default = ["web"]
+web = []
