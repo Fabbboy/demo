@@ -1,21 +1,15 @@
 [application]
+out_dir = "dist"
 
 [web.app]
+title = "Todo App"
 
-# HTML title tag content
-title = "todoapp-frontend"
+[web.watcher]
+watch_path = ["src", "assets"]
 
-# include `assets` in web platform
 [web.resource]
-
-# Additional CSS style files
-style = []
-
-# Additional JavaScript files
+style = ["assets/tailwind.css", "assets/main.css"]
 script = []
 
 [web.resource.dev]
-
-# Javascript code file
-# serve: [dev-server] only
 script = []
